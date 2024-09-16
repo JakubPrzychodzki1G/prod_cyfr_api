@@ -1,0 +1,11 @@
+vich_uploader:
+    db_driver: orm
+    metadata:
+        type: attribute
+    mappings:
+        media_object:
+            uri_prefix: /images
+            upload_destination: '%env(resolve:PUBLIC_PATH)%'
+            # Will rename uploaded files using a uniqueid as a prefix.
+            namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+            directory_namer:    app.directory_namer.media_object

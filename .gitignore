@@ -1,0 +1,17 @@
+cacert.pem
+.env
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/.env
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/public/media/
+/public/tmp/
+/var/
+/vendor/
+/cache/
+/poseidon-app.json
+poseidon-app.json
+###< symfony/framework-bundle ###
